@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -13,7 +14,9 @@ const IndexPage = () => (
 
     <HomeHeader>
       <Banner title="eatery" subtitle="55 main street. Santa Monica, CA">
-        <BannerButton style={{ margin: "2rem auto" }}>menu</BannerButton>
+          <Link to="/menu/" style={{ textDecoration: "none" }}>
+            <BannerButton style={{ margin: "2rem auto" }}>menu</BannerButton>
+          </Link>
       </Banner>
     </HomeHeader>
     <QuickInfo />
